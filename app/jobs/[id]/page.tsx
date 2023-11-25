@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
-const page = () => {
+const Page = () => {
   const searchParams = useSearchParams();
   const title = searchParams.get('title');
   const desc = searchParams.get('description');
@@ -36,4 +36,4 @@ const page = () => {
     </div>
   );
 };
-export default page;
+export default Page;
